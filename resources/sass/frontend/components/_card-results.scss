@@ -1,0 +1,189 @@
+.card-results {
+    background: $white;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 21%);
+    border-radius: 12px;
+    padding: 35px 25px 30px;
+    margin-bottom: 25px;
+
+    h6.font-liga {
+        font-family: $liga;
+        font-size: 50px;
+        color: red;
+
+        span {
+            font-family: $sanspro;
+        }
+    }
+
+    h5 {
+        color: $dark-grey;
+    }
+}
+
+ul.results-list {
+    margin-bottom: 30px;
+    padding-left: 0;
+    list-style-type: none;
+
+    li {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid $light-blue;
+        position: relative;
+        padding: 7px 0;
+        margin-bottom: 15px;
+
+        &.bg-brown {
+            background: $brown;
+
+            .name {
+                color: $white;
+            }
+        }
+
+        &.bg-granat {
+            background: $granat;
+
+            .score {
+                color: $white;
+            }
+
+            .name {
+                color: $white;
+            }
+        }
+
+        &.bg-white {
+            background: $white;
+
+            .score {
+                color: $dark-grey;
+            }
+        }
+
+        .score {
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.6rem;
+            color: $white;
+            border-radius: 11px;
+            width: 40px;
+            position: absolute;
+            top: 0px;
+            height: 40px;
+            padding: 6px 0;
+            text-align: center;
+
+            &_gold {
+                background: $gold;
+            }
+
+            &_grey {
+                background: $grey;
+            }
+
+            &_clean {
+                color: $dark-grey;
+            }
+
+            &_brown {
+                background: $brown;
+            }
+
+        }
+
+        .name {
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.6rem;
+            color: $dark-grey;
+            padding-left: 55px;
+        }
+
+        .points {
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2.6rem;
+            color: $white;
+            border-radius: 8px;
+            width: auto;
+            position: absolute;
+            top: 3px;
+            right: 4px;
+            height: 33px;
+            padding: 4px 10px;
+            text-align: center;
+
+            &_white {
+                background: $white;
+                color: $granat;
+            }
+
+            &_granat {
+                background: $granat;
+                color: $white;
+            }
+        }
+    }
+
+    &_modal {
+        li {
+            .name {
+                padding-left: 15px;
+            }
+        }
+    }
+
+    &_sortby {
+        li {
+            .name {
+                padding-left: 32%;
+
+                @include breakpoint(sm) {
+                    padding-left: 165px;
+                }
+            }
+        }
+    }
+}
+
+.scroll-results {
+    height: 270px;
+    padding: 0 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar-track {
+        background-color: $dark-white;
+    }
+
+    &::-webkit-scrollbar {
+        width: 7px;
+        background-color: $dark-white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $blue;
+        border: 2px solid $blue;
+    }
+}
+
+.sort-by {
+    color: $dark-grey;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    position: relative;
+    margin-left: 50px;
+    cursor: pointer;
+
+    &:before {
+        content: url(/../img/sort.png);
+        height: 15px;
+        width: 9px;
+        position: absolute;
+        top: 2px;
+        left: -13px;
+    }
+}

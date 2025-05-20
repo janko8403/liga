@@ -1,0 +1,62 @@
+h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 400;
+    color: $granat;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    color: $granat;
+}
+
+h5 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+}
+
+p {
+    color: $dark-grey;
+
+    span {
+        background: #234678;
+        color: #ffffff;
+        font-weight: 600;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px 10px;
+        border-radius: 10px;
+
+        &.span_red {
+            color: $white;
+            background: $text-red;
+        }
+    }
+
+    &.small {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        color: $text-grey;
+    }
+}
+
+.font-size-18 {
+    font-size: 1.8rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a {
+    color: $blue;
+
+    &:hover {
+        color: $granat;
+    }
+}

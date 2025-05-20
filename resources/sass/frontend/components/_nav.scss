@@ -1,0 +1,163 @@
+nav {
+    &.navbar {
+        background-color: transparent;
+        margin-bottom: 30px;
+
+        .navbar-brand {
+            padding-right: 30px;
+        }
+
+        .collapse {
+            display: none !important;
+
+            @include breakpoint(md) {
+                display: flex !important;
+            }
+
+            ul {
+                &.navbar-nav {
+                    li {
+                        padding: 0 10px;
+                        a {
+                            color: $granat;
+                            font-weight: 600;
+                            font-size: 1.8rem;
+
+                            &.nav-item-btn {
+                                background-color: $blue;
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                padding: 12px 10px;
+                                border-radius: 4px;
+                                color: $white;
+                                text-decoration: none;
+                                position: relative;
+                                top: 6px;
+                            }
+                        }
+
+                        &.dropdown {
+                            a {
+                                &.dropdown-toggle {
+                                    &:after {
+                                        display: none;
+                                    } 
+                                }
+                            }
+                            ul {
+                                &.dropdown-menu {
+                                    top: 160%;
+                                    left: -50%;
+                                    border-top-left-radius: 0;
+                                    border-top-right-radius: 0;
+                                    border-bottom-left-radius: 10px;
+                                    border-bottom-right-radius: 10px;
+                                    border-top: 4px solid $blue;
+                                    border-left-color: $white;
+                                    border-right-color: $white;
+                                    border-bottom-color: $white;
+                                    box-shadow: rgba(0, 0, 0, 0.24) 0px 10px 15px;
+
+                                    @include transition(all, .3s, ease);
+                                
+                                    min-height: 0;
+                                    display: none;
+                                    opacity: 0;
+
+                                    &.show {
+                                        min-height: 150px;
+                                        opacity: 1;
+                                        display: block;
+                                    }
+
+                                    .dropdown-menu-arrow {
+                                        position: relative;
+                                        &:before {
+                                            position: absolute;
+                                            content: "";
+                                            width: 0;
+                                            height: 0;
+                                            border-left: 13px solid transparent;
+                                            border-right: 13px solid transparent;
+                                            border-bottom: 12px solid $blue;
+                                            background: $white;
+                                            top: -21px;
+                                            left: 45%;
+                                        }
+                                    }
+
+
+                                    li {
+                                        padding: 2px 10px 2px 20px;
+                                        a {
+                                            font-weight: 400;
+                                            font-size: 1.5rem;
+                                            color: $granat;
+                                            padding: 8px 10px;
+                                            position: relative;
+                                            @include transition(all, .3s, ease);
+
+                                            &:before {
+                                                position: absolute;
+                                                content: 's';
+                                                font-family: $liga;
+                                                left: -10px;
+                                                top: 8px;
+                                                font-size: 1.2rem;
+                                                transform: rotate(-95deg);
+                                                color: $blue;
+                                            }
+
+                                            &:hover, &:active, &:focus {
+                                                background: transparent;
+                                                transform: translateX(10px);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .login-item {
+                            display: flex;
+
+                            img {
+                                padding-right: 10px;
+                            }
+
+                            .login-box {
+                                .login-name a {
+                                    color: $blue;
+                                    font-weight: 600;
+                                    font-size: 1.5rem;
+                                    line-height: 1.5rem;
+                                    margin-bottom: 0;
+                                    margin-top: 2px;
+                                    text-decoration: none;
+                                }
+
+                                .session-time {
+                                    color: $dark-grey;
+                                    font-size: 1.5rem;
+                                    line-height: .1rem;
+                                    font-weight: 400;
+                                    margin-bottom: 0;
+
+                                    span {
+                                        background: transparent;
+                                        color: $blue;
+                                        font-weight: 600;
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                        padding: 0;
+                                        border-radius: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(/../img/oval_1.png) top right 15% $white;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    color: $dark-grey;
+    font-family: $sanspro !important;
+    font-weight: 400 !important;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+
+    &.modal-open {
+        padding-right: 0 !important;
+    }
+}

@@ -1,0 +1,140 @@
+body {
+    background-color: #fff;
+}
+
+.card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.main-container {
+    width: -webkit-calc(100% - 100px);
+    width:    -moz-calc(100% - 100px);
+    width:         calc(100% - 100px);
+    margin-left: 80px;
+    margin-top: 70px;
+
+}
+
+.btn-m {
+   background-color: #f8f9fa;
+   border: 1px solid #f8f9fa;
+   border-radius: 4px;
+   color: #3c4043;
+   cursor: pointer;
+   font-family: arial,sans-serif;
+   font-size: 14px;
+   height: 36px;
+   line-height: 27px;
+   min-width: 54px;
+   padding: 0 16px;
+   text-align: center;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   white-space: pre;
+}
+
+.btn-m:hover {
+    border-color: #dadce0;
+    box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+    color: #202124;
+}
+
+.btn-m:focus {
+    border-color: #4285f4;
+    outline: none;
+}
+
+.gg-select {
+   box-sizing: border-box;
+   position: relative;
+   display: block;
+   transform: scale(1);
+   width: 22px;
+   height: 22px;
+}
+.gg-select::after,
+.gg-select::before {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 7px;
+    transform: rotate(-45deg);
+}
+.gg-select::before {
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    bottom: 4px;
+    opacity: 0.3;
+}
+.gg-select::after {
+    border-right: 2px solid;
+    border-top: 2px solid;
+    top: 4px;
+    opacity: 0.3;
+}
+th.sort {
+    cursor: pointer;
+    user-select: none;
+    &.asc {
+        .gg-select::after {
+            opacity: 1;
+        }
+    }
+    &.desc {
+        .gg-select::before {
+            opacity: 1;
+        }
+    }
+}
+
+.nav-link {
+    color: #333333;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #fff;
+}
+
+.menu-element-container {
+    padding: 10px;
+    margin: 10px;
+    max-width: 350px;
+    border: 1px solid #999999;
+    font-size: 14px;
+    background-color: #efefef !important;
+    cursor: pointer;
+}
+
+.menu-element-switch {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.table {
+    width:100% !important;
+}
+
+.d-right {
+    display: flex;
+    justify-content: end;
+}
+
+.ql-editor {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}

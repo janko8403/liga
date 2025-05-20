@@ -1,0 +1,30 @@
+.modal {
+    overflow: hidden;
+    .modal-dialog {
+        max-width: 700px;
+        .modal-content {
+            .modal-header {
+                border-bottom: none;
+
+                .btn-close-pzu {
+                    color: $blue;
+                    font-family: $liga;
+                    font-size: 2rem;
+                    background: transparent;
+                    border: 0;
+                    margin-top: 5px;
+                }
+            }
+            .modal-body {
+                padding: 10px 50px 30px;
+                .title {
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                    color: $granat;
+                    text-align: center;
+                    padding: 20px 0;
+                }
+            }
+        }
+    }
+}

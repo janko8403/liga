@@ -1,0 +1,48 @@
+.badge-pzu {
+    background: $granat;
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    text-align: center;
+    display: table;
+    padding: 7px 10px;
+    border-radius: 10px;
+
+    span {
+        font-weight: 600;
+    }
+
+    &_clean {
+        background: transparent;
+        color: #545C68;
+    }
+
+    &_grey {
+        background: $grey;
+        color: $dark-grey;
+    }
+
+    &_light_grey {
+        background: $grey;
+        color: $white;
+    }
+
+    &_white {
+        color: $dark-grey;
+        background: $white;
+    }
+
+    &_granat {
+        color: $white;
+        background: $granat;
+    }
+
+    &_gold {
+        background: $gold;
+    }
+
+    &_brown {
+        background: $brown;
+    }
+}

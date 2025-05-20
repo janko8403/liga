@@ -1,0 +1,20 @@
+textarea {
+    border: 1px solid $text-light-grey;
+    border-radius: 3px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    margin: 0 0 20px;
+    color: $text-grey;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 20px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.blue-border {
+        border: 1px solid $light-blue;
+    }
+}

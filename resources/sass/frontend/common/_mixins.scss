@@ -1,0 +1,71 @@
+//Breakpoints
+@mixin breakpoint($width) {
+
+    @if ($width == xs) {
+        @media (min-width: $xs) {
+            @content
+        }
+    }
+    @if ($width == xs-only) {
+        @media (max-width: $xs - 1) {
+            @content
+        }
+    }
+    @if ($width == sm) {
+        @media (min-width: $sm) {
+            @content
+        }
+    }
+    @if ($width == up-to-sm) {
+        @media (max-width: $sm - 1) {
+            @content
+        }
+    }
+    @if ($width == md) {
+        @media (min-width: $md) {
+            @content
+        }
+    }
+    @if ($width == up-to-md) {
+        @media (max-width: $md - 1) {
+            @content
+        }
+    }
+    @if ($width == lg) {
+        @media (min-width: $lg) {
+            @content
+        }
+    }
+    @if ($width == up-to-lg) {
+        @media (max-width: $lg - 1) {
+            @content
+        }
+    }
+    @if ($width == xl) {
+        @media (min-width: $xl) {
+            @content
+        }
+    }
+    @if ($width == portrait) {
+        @media screen and (orientation: portrait) {
+            @content
+        }
+    }
+    @if ($width == landscape) {
+        @media screen and (orientation: landscape) {
+            @content
+        }
+    }
+}
+
+@mixin full-width {
+    width: calc(100% + 5vw * 2);
+    margin: 0 -5vw;
+}
+
+// Transitions
+@mixin transition($what, $duration, $easing) {
+    -webkit-transition: $what $duration $easing;
+    -moz-transition: $what $duration $easing;
+    transition: $what $duration $easing;
+}

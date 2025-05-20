@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'liga_mistrzow';
+	src: url('../../../assets/liga_mistrzow.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../../assets/SourceSansPro-Regular.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-Black.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-BlackItalic.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-Bold.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-ExtraLight.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-ExtraLightItalic.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-Italic.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-Light.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-LightItalic.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-SemiBold.ttf')  format('truetype'),
+         url('../../../assets/SourceSansPro-SemiBoldItalic.ttf')  format('truetype')
+}
+
+$sanspro: 'Source Sans Pro', sans-serif;
+$liga: 'liga_mistrzow';
+
+$white: #ffffff;
+$dark-white: #F7F7F4;
+$black: #000000;
+$granat: #234678;
+$blue:  #009DDE;
+$light-blue: #BEDCE8;
+$dark-grey: #545C68;
+$grey: #D9D9D9;
+$gold: #dcbd65;
+$brown: #B08D57;
+
+$text-grey: #9DAABD;
+$text-green: #8CC83C;
+$text-red: #D45F7C;
+$text-light-grey:#D8D8D8;
+
+
+
+
+// Breakpoints
+$xs: 480px;
+$sm: 640px;
+$md: 991px;
+$lg: 1024px;
+$xl: 1280px;

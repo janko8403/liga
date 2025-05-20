@@ -1,0 +1,50 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "w": "npm run watch",
+        "development": "cross-env NODE_ENV=development node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development node_modules/.bin/webpack --watch --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.10.2",
+        "axios": "^0.27",
+        "bootstrap": "^5.2.0",
+        "cross-env": "^7.0.3",
+        "laravel-mix": "^6.0.49",
+        "lodash": "^4.17.19",
+        "postcss": "^8.1.14",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.32.11",
+        "sass-loader": "^11.0.1",
+        "vue": "^3.2.0",
+        "vue-template-compiler": "^2.7.8",
+        "webpack-cli": "^4.10.0"
+    },
+    "dependencies": {
+        "@he-tree/vue": "^2.0.4",
+        "@vuepic/vue-datepicker": "^3.4.7",
+        "@vueup/vue-quill": "^1.0.0",
+        "bootstrap-vue-3": "^0.3.2",
+        "datatables.net-bs5": "^1.12.1",
+        "datatables.net-dt": "^1.12.1",
+        "datatables.net-select": "^1.4.0",
+        "datatables.net-vue3": "^1.0.0",
+        "jquery": "^3.6.1",
+        "laravel-vue-pagination": "^3.0.0",
+        "moment": "^2.29.4",
+        "npm-watch": "^0.11.0",
+        "quill-better-table": "^1.2.10",
+        "swiper": "^8.4.2",
+        "vue-custom-select": "^1.0.10",
+        "vue-dataset": "^3.4.8",
+        "vue-float-label": "^1.6.1",
+        "vue-image-crop-upload": "^3.0.0",
+        "vue-loader": "^17.0.0",
+        "vue-multiselect": "^3.0.0-alpha.2",
+        "vue-router": "^4.1.3",
+        "vue3-autocomplete": "^0.1.0",
+        "vue3-tabs": "^0.1.13-beta.3",
+        "webpack": "^5.74.0"
+    }
+}

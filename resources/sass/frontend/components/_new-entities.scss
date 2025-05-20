@@ -1,0 +1,53 @@
+.new-entities {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid $light-blue;
+
+    .line-left {
+        border-left: 1px solid transparent;
+
+        @include breakpoint(md) {
+            border-left: 1px solid $grey;
+        }
+    }
+
+    .arrows {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        margin: 0 auto;
+
+        &:before, &:after {
+            position: absolute;
+            font-size: 4.5rem;
+            font-family: $liga;
+            color: $blue;
+            top: 35px;
+            content: 's';
+        }
+
+        &:before {
+            transform: rotate(180deg);
+            left: inherit;
+            top: 10px;
+
+            @include breakpoint(md) {
+                transform: rotate(90deg);
+                left: -20px;
+                top: 40px;
+            }
+        }
+
+        &:after {
+            transform: rotate(0deg);
+            left: inherit;
+            top: 45px;
+
+            @include breakpoint(md) {
+                transform: rotate(-90deg);
+                left: 20px;
+                top: 40px;
+            }
+        }
+    }
+}

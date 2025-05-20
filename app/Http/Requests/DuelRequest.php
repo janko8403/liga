@@ -1,0 +1,43 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class DuelRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array<string, mixed>
+     */
+    public function rules()
+    {
+        return [
+            'award' => [],
+            'first_nepu' => [],
+            'second_nepu' => [],
+            'active_from' => ['required','date'],
+            'active_to' => ['required','date','after:active_from'],
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'active_from.required' => 'Data początkowa jest wymagana',
+            'active_to.required' => 'Data końcowa aktywności jest wymagana',
+            'active_to.after' => 'Data końcowa nie może być wcześniejsza niż początkowa',
+        ];
+    }
+}

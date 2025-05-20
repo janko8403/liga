@@ -1,0 +1,208 @@
+.datatable {
+    width: 100%;
+    overflow: hidden;
+    .dataTables_wrapper {
+        .dataTables_paginate,
+        .dataTables_info,
+        .dataTables_filter,
+        .dataTables_length {
+            display: none;
+        }
+
+        table {
+            width: 100% !important;
+            border-spacing: 0 10px;
+
+            &.mini-table {
+                tbody {
+                    tr {
+                        td {
+                            &:nth-child(1) {
+                                width: 10%;
+                            }
+                            &:nth-child(2) {
+                                width: 70%;
+                            }
+                        }
+                    }
+                }
+            }
+            thead {
+                tr {
+                    th {
+                        padding: 15px;
+                        border-bottom: 0px solid rgba(0, 0, 0, 0.3);
+
+                        &.sorting {
+                            padding-left: 26px;
+                            color: $dark-grey;
+                            font-size: 1.2rem;
+                            line-height: 1.5rem;
+                            font-weight: 400;
+                            &:before,
+                            &:after {
+                                font-size: 2rem;
+                                left: 10px;
+                                right: auto;
+                            }
+                        }
+                    }
+                }
+            }
+            tbody {
+                border-color: transparent;
+                border-style: hidden;
+                border-width: 0;
+
+                tr {
+                    border-color: transparent;
+                    border-style: hidden;
+                    border-width: 0;
+                    border-spacing: 0;
+
+                    &.active_table {
+                        td {
+                            color: $white;
+                            background: $granat;
+
+                            .badge-pzu_granat {
+                                color: $granat;
+                                background: $white;
+                            }
+
+                            .badge-pzu_clean {
+                                color: $white;
+                            }
+
+                            .star-win {
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    &:first-child td {
+                        border-top: 1px solid $light-blue !important;
+                    }
+
+                    td {
+                        padding: 0;
+
+                        &:first-child {
+                            border-top-left-radius: 12px;
+                            border-bottom-left-radius: 12px;
+                            border-left: 1px solid $light-blue;
+                        }
+
+                        &:last-child {
+                            border-top-right-radius: 12px;
+                            border-bottom-right-radius: 12px;
+                            border-right: 1px solid $light-blue;
+                        }
+
+                        .star-win {
+                            font-family: $liga;
+                            color: $blue;
+                            font-size: 3rem;
+                            padding: 0 20px;
+                        }
+
+                        .score-table {
+                            font-size: 1.5rem;
+                            line-height: 3.2rem;
+                            font-weight: 600;
+                            border-radius: 11px;
+                            width: 40px;
+                            height: 40px;
+                            padding: 6px 0;
+                            text-align: center;
+
+                            &_white {
+                                color: $dark-grey;
+                                background: $white;
+                            }
+
+                            &_gold {
+                                background: $gold;
+                                color: $white;
+                            }
+
+                            &_grey {
+                                background: $grey;
+                                color: $white;
+                            }
+
+                            &_brown {
+                                background: $brown;
+                                color: $white;
+                            }
+
+                        }
+                    }
+
+                    &:hover > * {
+                        box-shadow: inset 0 0 00 rgb(0 0 0 / 4%) !important;
+                    }
+
+                    &.even {
+                        box-shadow: inset 0 0 0 0 rgb(0 0 0 / 5%) !important;
+                        .sorting_1 {
+                            box-shadow: inset 0 0 0 0 rgb(0 0 0 / 5%) !important;
+                        }
+                    }
+
+                    &.odd>* {
+                        box-shadow: inset 0 0 0 0 rgb(0 0 0 / 5%) !important;
+                    }
+
+                    &.odd {
+                        box-shadow: inset 0 0 0 0 rgb(0 0 0 / 5%) !important;
+                        .sorting_1 {
+                            box-shadow: inset 0 0 0 0 rgb(0 0 0 / 5%) !important;
+                        }
+                    }
+
+                    td {
+                        border-top: 1px solid $light-blue;
+                        border-bottom: 1px solid $light-blue;
+                    }
+                }
+            }
+            &.no-footer {
+                border-bottom: 0px solid rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}
+
+table.standard {
+    color: $dark-grey;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-top: 20px;
+
+    thead {
+        tr {
+            td {
+                padding: 10px 0;
+
+                &:first-child {
+                    width: 70%;
+
+                    @include breakpoint(md) {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding: 10px 0;
+                border-bottom: 1px solid $text-light-grey;
+            }
+        }
+    }
+}

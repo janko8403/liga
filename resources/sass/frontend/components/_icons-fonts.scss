@@ -1,0 +1,208 @@
+.title-header {
+    font-family: $sanspro;
+    font-size: 2rem;
+    font-weight: 400;
+    color: $granat;
+
+    @include breakpoint(md) {
+        font-size: 3rem;
+        line-height: 3.3rem;
+    }
+}
+
+.title-with-icon {
+    font-family: $sanspro;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $dark-grey;
+
+    &_win {
+        font-size: 1.8rem;
+        color: $text-green;
+    }
+
+    &_lose {
+        font-size: 1.8rem;
+        color: $text-red;
+    }
+
+    &_red {
+        color: $text-red;
+    }
+
+    span {
+        font-weight: 800;
+    }
+}
+
+.icon-font {
+    position: relative;
+
+    &_no_content {
+        font-family: $liga;
+        font-size: 4rem;
+    }
+
+    &.icon-color {
+        &_g {
+            &:before {
+                color: $granat;
+            }
+        }
+        &_b {
+            &:before {
+                color: $blue;
+            }
+        }
+        &_r {
+            &:before {
+                color: $text-red;
+            }
+        }
+    }
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: $liga;
+        font-weight: normal;
+    }
+
+    &.icon-font {
+        &_lg {
+            padding-left: 60px;
+            &:before {
+                font-size: 4rem;
+            }
+        }
+
+        &_md {
+            padding-left: 50px;
+            &:before {
+                font-size: 3rem;
+            }
+        }
+
+        &_sm {
+            padding-left: 40px;
+            &:before {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    &.icon {
+        &_a {
+            &:before {
+                content: "a";
+            }
+        }
+        &_b {
+            &:before {
+                content: "b";
+            }
+        }
+        &_c {
+            &:before {
+                content: "c";
+            }
+        }
+        &_d {
+            &:before {
+                content: "d";
+            }
+        }
+        &_e {
+            &:before {
+                content: "e";
+            }
+        }
+        &_f {
+            &:before {
+                content: "f";
+            }
+        }
+        &_g {
+            &:before {
+                content: "g";
+            }
+        }
+        &_h {
+            &:before {
+                content: "h";
+            }
+        }
+        &_i {
+            &:before {
+                content: "i";
+            }
+        }
+        &_j {
+            &:before {
+                content: "j";
+            }
+        }
+        &_k {
+            &:before {
+                content: "k";
+            }
+        }
+        &_l {
+            &:before {
+                content: "l";
+            }
+        }
+        &_m {
+            &:before {
+                content: "m";
+            }
+        }
+        &_n {
+            &:before {
+                content: "n";
+            }
+        }
+        &_o {
+            &:before {
+                content: "o";
+            }
+        }
+        &_p {
+            &:before {
+                content: "p";
+            }
+        }
+        &_q {
+            &:before {
+                content: "q";
+            }
+        }
+        &_r {
+            &:before {
+                content: "r";
+            }
+        }
+        &_s {
+            &:before {
+                content: "s";
+            }
+        }
+        &_t {
+            &:before {
+                content: "t";
+            }
+        }
+        &_u {
+            &:before {
+                content: "u";
+            }
+        }
+        &_v {
+            &:before {
+                content: "v";
+            }
+        }
+        
+    }
+}

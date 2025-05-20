@@ -1,0 +1,70 @@
+.map {
+    position: relative;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .box-city {
+        position: absolute;
+        z-index: 999;
+        border-radius: 3px;
+        padding: 5px 20px;
+        background: $text-grey;
+        text-transform: uppercase;
+        color: $white;
+        border: 1px solid $text-grey;
+        cursor: pointer;
+
+        @include transition(all, .3s, ease);
+
+        &:hover {
+            border: 1px solid $white;
+            box-shadow: 0 0 4px 0 rgb(0 0 0 / 21%);
+        }
+
+        &_warszawa {
+            left: 59%;
+            top: 37%;
+        }
+        &_krakow {
+            left: 50%;
+            top: 76%;
+        }
+        &_lodz {
+            left: 46%;
+            top: 49%;
+        }
+        &_wroclaw {
+            left: 22%;
+            top: 61%;
+        }
+        &_poznan {
+            left: 21%;
+            top: 40%;
+        }
+        &_gdansk {
+            left: 36%;
+            top: 10%;
+        }
+        &_gdynia {
+            left: 35%;
+            top: 5%;
+        }
+        &_szczecin {
+            left: 0%;
+            top: 25%;
+        }
+        &_bydgoszcz {
+            left: 33%;
+            top: 28%;
+        }
+        &_lublin {
+            left: 71%;
+            top: 60%;
+        }
+    }
+}
